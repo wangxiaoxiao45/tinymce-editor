@@ -1,9 +1,10 @@
 {
-  "name": "TinymceEditor",
-  "version": "1.0.0",
+  "name": "@wangxiaoxiao45/tinymce-editor",
+  "version": "1.0.3",
   "files": [
     "dist/*",
-    "src/**/*.vue"
+    "src/**/*.vue",
+    "public/tinymce"
   ],
   "main": "dist/TinymceEditor.common.js",
   "scripts": {
@@ -62,14 +63,14 @@
       "prettier/prettier": [
         "error",
         {
-          "printWidth": 150, 
-          "tabWidth": 2, 
-          "useTabs": false, 
-          "singleQuote": true, 
-          "semi": false, 
-          "trailingComma": "none", 
-          "arrowParens": "avoid", 
-          "jsxBracketSameLine": true 
+          "printWidth": 150,
+          "tabWidth": 2,
+          "useTabs": false,
+          "singleQuote": true,
+          "semi": false,
+          "trailingComma": "none",
+          "arrowParens": "avoid",
+          "jsxBracketSameLine": true
         }
       ]
     }
@@ -91,5 +92,8 @@
     "ellipsis",
     "showmore",
     "showmore text"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
