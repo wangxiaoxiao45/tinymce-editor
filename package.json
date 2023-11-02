@@ -1,19 +1,21 @@
 {
-  "name": "vue-show-more-text",
-  "version": "2.0.2",
+  "name": "TinymceEditor",
+  "version": "1.0.0",
   "files": [
     "dist/*",
     "src/**/*.vue"
   ],
-  "main": "dist/vueShowMoreText.common.js",
+  "main": "dist/TinymceEditor.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build-package": "vue-cli-service build --target lib --name vueShowMoreText ./src/index.js",
+    "build-package": "vue-cli-service build --target lib --name TinymceEditor ./src/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@tinymce/tinymce-vue": "^3.2.8",
     "core-js": "^3.6.5",
+    "tinymce": "^5.6.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -41,7 +43,36 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-var": "error",
+      "no-useless-escape": "off",
+      "no-console": "off",
+      "prefer-const": "off",
+      "object-shorthand": "off",
+      "vue/order-in-components": "off",
+      "vue/multi-word-component-names": "off",
+      "multi-word": "off",
+      "no-unused-expressions": "off",
+      "vue/no-template-shadow": "off",
+      "vue/require-prop-types": "off",
+      "vue/require-default-prop": "off",
+      "vue/attributes-order": "off",
+      "vue/no-v-html": "off",
+      "no-template-curly-in-string": "off",
+      "prettier/prettier": [
+        "error",
+        {
+          "printWidth": 150, 
+          "tabWidth": 2, 
+          "useTabs": false, 
+          "singleQuote": true, 
+          "semi": false, 
+          "trailingComma": "none", 
+          "arrowParens": "avoid", 
+          "jsxBracketSameLine": true 
+        }
+      ]
+    }
   },
   "browserslist": [
     "> 1%",

@@ -1,3 +1,3 @@
-import VueShowMoreText from "./components/VueShowMoreText.vue";
+import TinymceEditor from './components/TinymceEditor.vue'
 
-export default VueShowMoreText;
+export default TinymceEditor

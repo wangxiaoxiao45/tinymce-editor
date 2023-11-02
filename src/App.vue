@@ -2,26 +2,18 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <div class="text-container">
-      <vue-show-more-text
-        :text="txtString"
-        :lines="3"
-        additional-container-css="margin:14px;"
-        additional-content-css="font-size:16px;"
-        additional-content-expanded-css="font-size:16px;"
-        additional-anchor-css="font-size: 16px;"
-        @click="change"
-      />
+      <TinymceEditor v-model="txtString"></TinymceEditor>
     </div>
   </div>
 </template>
 
 <script>
-import VueShowMoreText from './components/VueShowMoreText.vue'
+import TinymceEditor from './components/TinymceEditor.vue'
 
 export default {
   name: 'App',
   components: {
-    VueShowMoreText,
+    TinymceEditor,
   },
   data() {
     return {
@@ -41,6 +33,6 @@ export default {
   margin-top: 60px;
 }
 .text-container {
-  width: 200px;
+  width: 700px;
 }
 </style>
