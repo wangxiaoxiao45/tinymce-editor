@@ -1,6 +1,6 @@
 {
   "name": "@wangxiaoxiao45/tinymce-editor",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "files": [
     "dist/*",
     "src/**/*.vue",
@@ -80,10 +80,10 @@
     "last 2 versions",
     "not dead"
   ],
-  "homepage": "https://github.com/limlt/vue-show-more-text.git#readme",
+  "homepage": "https://github.com/wangxiaoxiao45/tinymce-editor.git#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/limlt/vue-show-more-text.git"
+    "url": "git+https://github.com/wangxiaoxiao45/tinymce-editor.git"
   },
   "license": "MIT",
   "keywords": [
